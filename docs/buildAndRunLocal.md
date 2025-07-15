@@ -9,7 +9,6 @@
 # Create the new database
 create database batch;
 ```
----
 
 ### 1.- Compilar usando el archivo 'gradle-build-all.sh'
 

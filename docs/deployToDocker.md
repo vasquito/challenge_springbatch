@@ -5,7 +5,6 @@
 - Gradle
 - Docker 
 - Git hash
----
 
 ### 1.- Compilar usando el archivo 'gradle-build-all.sh'
 1) Abrir una terminal Git hash
