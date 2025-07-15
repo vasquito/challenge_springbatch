@@ -1,8 +1,5 @@
 # Como deployar al Docker Local?
 
----
-
-
 ## Requirements
 - Java 17
 - Gradle

@@ -1,6 +1,5 @@
 # Arquitectura - Challenge
 
----
 ## Requirementos
 - Java 17
 - Gradle

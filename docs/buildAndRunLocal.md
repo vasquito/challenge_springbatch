@@ -1,8 +1,5 @@
 # Como compilar y levantar los servicios en el entorno local?
 
----
-
-
 ## Requirements
 - Java 17
 - Gradle
