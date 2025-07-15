@@ -57,18 +57,23 @@ URL: http://127.0.0.1:8080/batch/sales/csv/download?rows=[long] (por defecto 100
   - [] Auditar los errores (guardar registros invalidos en una tabla de invalidaciones)
 - [] Auditoria
   - [] Patrones de logs
-  - [] Auditar los errores (guardar registros no procesados en una tabla de reintentos)  
+  - [] Auditar los errores (guardar registros no procesados en una tabla de reintentos o no procesados)  
 - [] Performance
   - [] Mejorar en los threads
   - [] Mejorar el sistema de deteccion de archivos en la carpeta source
 - [] Monitoreo
   - [] Auditar mejor los procesos para monitorear
-  - [] Dashboard Power Bi con visualizaciones
+  - [] Dashboards con visualizaciones 
+    - Front End con librerias para visualizaciones
+    - Power Bi
+    - Grafana/Prometehus
+    - Logstash/Elasticsearch/Kibana
+    - Debezium para capturar cambios en Postgresql y enviarlos a Elasticsearch/Kibana
   - [] Alertas (por email o slack)
 - [] Bases de datos
   - [] Dividir en schemas 
     - batch (con tablas procesadas)
     - admin (con tablas de flyway y batches)
 - [] Calidad
- - [] Test Unitarios y coberturas (JaCoCo, Mockito, Junit)
+  - [] Test Unitarios y coberturas (JaCoCo, Mockito, Junit)
 
