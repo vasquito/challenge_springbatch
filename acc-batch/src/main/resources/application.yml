@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: springbatch
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:batch}
+    driver-class-name: org.postgresql.Driver
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:admin}
+  batch:
+    job:
+      enabled: false
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+    show-sql: ${SHOW_SQL:false}
+    hibernate:
+      ddl-auto: none
+batch:
+  sales:
+    fixed-delay-job: ${SALES_FIXED_DELAY_JOB:60000}
+    chunk-size: ${SALES_CHUNK_SIZE:1000}
+    retry-limit: ${SALES_RETRY_LIMIT:3}
+    skip-limit: ${SALES_SKIP_LIMIT:1}
+    source:
+      folder: ${SALES_SOURCE_FOLDER:./source}
+      file-name: ${SALES_SOURCE_FILENAME:sales-raw.csv}
+      fields: ${SALES_SOURCE_FIELDS:"puntoVenta,importe,cantidad,temperatura"}
+    target:
+      folder: ${SALES_TARGET_FOLDER:./target}

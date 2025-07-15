@@ -1,0 +1,6 @@
+rootProject.name = 'springbatch'
+include 'acc-app'
+include 'acc-batch'
+include 'acc-lib-sales'
+include 'acc-lib-utils'
+

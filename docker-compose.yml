@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  app:
+    container_name: app
+    build:
+      context: ./acc-app
+    ports:
+      - '8080:8080'
+  batch:
+    container_name: batch
+    build:
+      context: ./acc-batch
+    depends_on:
+      - postgres-db
+    environment:
+      - POSTGRES_HOST=postgres-db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=batch
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+      - SHOW_SQL=false
+      - SALES_SOURCE_FOLDER=/app/source
+      - SALES_TARGET_FOLDER=/app/target
+      - SALES_FIXED_DELAY_JOB=60000
+    volumes:
+      - ./source:/app/source
+      - ./target:/app/target
+  postgres-db:
+    image: postgres:15.2-alpine3.17
+    container_name: postgres-db
+    restart: always
+    environment:
+      - POSTGRES_DB=batch
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+    ports:
+      - '5433:5432'

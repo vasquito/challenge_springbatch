@@ -1,0 +1,29 @@
+server:
+  forward-headers-strategy: framework
+  servlet:
+    context-path: /batch
+info:
+  app:
+    version: 1.0.0
+    name: "App for SpringBatch"
+    description: "Accenture - Challenge - Spring Batch"
+    urlDoc: "https://... to md"
+springdoc:
+  swagger-ui:
+    config-url: /batch/apidocs/swagger-config
+    urls:
+      - name: batch
+        url: /batch/apidocs
+    use-root-path: false
+    show-extensions: false
+    show-common-extensions: false
+    operationsSorter: method
+    tagsSorter: alpha
+  api-docs:
+    path: /apidocs
+  use-fqn: false
+batch:
+  sales:
+    source:
+      file-name: ${SALES_SOURCE_FILENAME:sales-raw.csv}
+      fields: ${SALES_SOURCE_FIELDS:"puntoVenta,importe,cantidad,temperatura"}
