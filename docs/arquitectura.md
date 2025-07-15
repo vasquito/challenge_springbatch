@@ -51,6 +51,7 @@ URL: http://127.0.0.1:8080/batch/sales/csv/download?rows=[long] (por defecto 100
 ![img.png](images/estructura_proyecto.png)
 ## Observaciones
 - Para generar un archivo grande CSV, tuve que crear procesamiento paralelo y dividir archivos.
+- Se incorporo Flyway que es un gestor de migraciones de base de datos, con eso podemos generar tablas necesarias para el funcionamiento de las pruebas locales
 
 ## Propuestas de Mejoras
 - [] Validaciones
