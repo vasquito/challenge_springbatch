@@ -82,19 +82,19 @@ time="2025-07-15T01:13:42-03:00" level=warning msg="D:\\Dev\\challenges\\accentu
 
 ## Batch
 
-- Para probar las transacciones, sobre la carpeta **source** copiar cualquier archivo generado desde el microservicio de generador csv que lleve siempre el nombre: **sales-raw.csv**
+- Para probar las transacciones, sobre la carpeta **source** copiar cualquier archivo generado desde el microservicio de generador csv que lleve siempre el nombre: **sales-raw.csv**<br>
   ![img.png](images/folder_source.png)
 
 
 - Entonces dentro de un minuto (configurable en SALES_FIXED_DELAY_JOB), el proceso batch se encargara de tomar este archivo para procesarlo y
-  una vez procesado se movera este mismo archivo hacia otra carpeta de procesados como **target**
+  una vez procesado se movera este mismo archivo hacia otra carpeta de procesados como **target**<br>
   ![img.png](images/folder_target.png)
 
 
-- Mientras el archivo original **sales-raw.csv** desaparece de la carpeta **source**
+- Mientras el archivo original **sales-raw.csv** desaparece de la carpeta **source**<br>
   ![img.png](images/folder_source_empty.png)
 
 
-- Como resultado en la tabla **sales** de la base **batch**, veriamos N registros ya procesados y transformados.
+- Como resultado en la tabla **sales** de la base **batch**, veriamos N registros ya procesados y transformados.<br>
   ![img.png](images/postgresql.png)
   
