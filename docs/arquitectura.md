@@ -23,12 +23,14 @@ URL: http://127.0.0.1:8080/batch/sales/csv/download?rows=[long] (por defecto 100
 2. Con el archivo ya generado, copiar el archivo con el nombre exacto: **sales-raw.csv** en la carpeta **source**
 
 3. Ejecucion del proceso batch
-   - Lectura CSV: Se lee el archivo **sales-raw.csv** línea por línea desde la carpeta **sources**
-   - Transformación:
+- Lectura CSV
+  - Se lee el archivo **sales-raw.csv** línea por línea desde la carpeta **sources**
+- Transformación:
     - Omitir el campo “temperatura”.
     - Calcular impuestos.
-   - Escritura en BD: Insertar los datos procesados en la tabla "sales" de la bd: batch
-   - Mover el archivo ya procesado a la carpeta **target**
+- Escritura en BD 
+  - Insertar los datos procesados en la tabla "sales" de la bd: batch
+- Mover el archivo ya procesado a la carpeta **target**
 
 ## Arquitectura
 

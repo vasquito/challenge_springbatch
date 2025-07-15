@@ -7,6 +7,7 @@
 - Java 17
 - Gradle
 - Postgresql Local con user: postgres y pass: admin
+- Git hash
 ```bash
 # Create the new database
 create database batch;
@@ -25,7 +26,7 @@ C:\...\springbatch
 cd deploy
 ```
 
-3) Ejecutar este script shell
+3) Ejecutar este script shell, este script tambien se encarga de crear carpetas: source y target
 ```bash
 ./gradle-build-all.sh 
 
@@ -42,7 +43,7 @@ Prepare and Build
 ```
 
 ### 2.- Levantar la aplicacion APP
-1) Abrir una terminal CMD o Git hash
+1) Abrir una terminal Git hash
    
 2) Ir al directorio del proyecto:
 ```bash
@@ -75,7 +76,7 @@ cd deploy
   - http://127.0.0.1:8080/batch/sales/csv/download?rows=500000000 - 12,8 GB - 15 min aprox
 
 ### 3.- Levantar la aplicacion BATCH
-1) Abrir otra terminal CMD o Git hash
+1) Abrir otra terminal Git hash
    
 2) Ir al directorio del proyecto:
 ```bash

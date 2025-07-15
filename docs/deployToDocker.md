@@ -7,10 +7,11 @@
 - Java 17
 - Gradle
 - Docker 
+- Git hash
 ---
 
 ### 1.- Compilar usando el archivo 'gradle-build-all.sh'
-1) Abrir una terminal CMD o Git hash
+1) Abrir una terminal Git hash
 
 2) Ir al directorio del proyecto:
 ```bash
@@ -22,7 +23,7 @@ C:\...\springbatch
 cd deploy
 ```
 
-4) Ejecutar este script shell
+4) Ejecutar este script shell y este tambien crea carpetas source y target
 ```bash
 ./gradle-build-all.sh 
 
