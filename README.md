@@ -1,10 +1,11 @@
-![accenture](docs/images/accenture.png)
-
 # Challenge - Java - Spring Batch  
 
----
+## Contenido
+- [Arquitectura - Challenge](./docs/arquitectura.md)
+- [Como compilar y levantar los servicios en el entorno local?](docs/buildAndRunLocal.md)
+- [Como deployar al Docker Local?](./docs/deployToDocker.md)
 
-
+## Challenge 
 Por favor generar una aplicación de tipo Spring-Bacth.
 
 **Se requiere**:
@@ -55,12 +56,7 @@ A cada registro se lo podría
 - cualquier tipo de BBDD relacional
 - cualquier versión de JAVA >= 17
 
----
 
-## Contenido
-- [Arquitectura - Challenge](./docs/arquitectura.md)
-- [Como compilar y levantar los servicios en el entorno local?](docs/buildAndRunLocal.md)
-- [Como deployar al Docker Local?](./docs/deployToDocker.md)
 
 
 
